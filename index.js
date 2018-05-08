@@ -54,7 +54,7 @@ const BackgroundTimer = {
 			delete callbacks[intervalId];
 			//RNBackgroundTimer.clearTimeout(intervalId);
 		}
-	}
+	},
 	
 	resetTimer(){
 		uniqueId = 0;
