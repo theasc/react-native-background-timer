@@ -55,6 +55,11 @@ const BackgroundTimer = {
 			//RNBackgroundTimer.clearTimeout(intervalId);
 		}
 	}
+	
+	resetTimer(){
+		uniqueId = 0;
+		callbacks = {};
+	}
 };
 
 DeviceEventEmitter.addListener('backgroundTimer.timeout', (id) => {
